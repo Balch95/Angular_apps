@@ -1,0 +1,13 @@
+<h2>Counter App</h2>
+
+<p>{{counterValue}}</p>
+
+<input 
+    #stepValue 
+    type="number"
+    min="1"
+>
+
+<button (click)="addStep()">Add 1</button>
+<button (click)="addSetStep(stepValue.value)">Add step value</button>
+<button (click)="resetStep()">Reset</button>
